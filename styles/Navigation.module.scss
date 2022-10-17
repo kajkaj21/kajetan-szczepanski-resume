@@ -1,0 +1,58 @@
+.Navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-grey-6);
+  z-index: 999;
+  padding: 1.2rem;
+
+  @media screen and (min-width: 600px) {
+    bottom: 50%;
+    left: calc(100vw - 10rem);
+    transform: translate(50%, 50%);
+    width: 0;
+    background-color: transparent;
+  }
+
+  ul {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 600px) {
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+
+    li {
+      cursor: pointer;
+      margin: 0 auto;
+      width: 5.5rem;
+      height: 5.5rem;
+      border-radius: 50%;
+      box-shadow: var(--box-shadow-1);
+      background-color: var(--color-grey-5);
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s ease background-color;
+
+      &.Active {
+        background-color: var(--color-secondary);
+      }
+      &.Inctive {
+        background-color: var(--color-grey-5);
+      }
+
+      &:hover {
+        background-color: var(--color-secondary);
+      }
+    }
+  }
+}

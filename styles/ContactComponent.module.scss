@@ -1,0 +1,85 @@
+.Container {
+  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-bottom: 8rem;
+
+  .InfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.2rem;
+    margin-bottom: 3rem;
+
+    @media screen and (min-width: 600px) {
+    }
+  }
+
+  .InputsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    input,
+    textarea,
+    button {
+      font-family: inherit;
+      font-size: 2rem;
+      display: block;
+      width: 100%;
+      background-color: var(--color-grey-6);
+      color: var(--color-white);
+      border: 0;
+      border-radius: var(--border-radious);
+      padding: 1rem 1.4rem;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 10rem;
+      max-height: 40rem;
+      resize: vertical;
+    }
+
+    .Buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: flex-end;
+
+      input[type="submit"] {
+        cursor: pointer;
+        background-color: var(--color-secondary);
+        max-width: 15rem;
+      }
+
+      button {
+        cursor: pointer;
+        max-width: 15rem;
+      }
+    }
+  }
+}
+
+.Notification {
+  position: fixed;
+  max-width: 15rem;
+  border-radius: var(--border-radious);
+  padding: 0.5rem 1rem;
+  box-shadow: var(--box-shadow-1);
+  opacity: 0;
+  text-align: center;
+  transition: 0.3s ease all;
+
+  &.Sent {
+    background-color: var(--color-secondary);
+    opacity: 1;
+    transition: 0.3s ease all;
+  }
+
+  &.Error {
+    background-color: var(--color-error);
+    opacity: 1;
+    transition: 0.3s ease all;
+  }
+}

@@ -1,0 +1,45 @@
+.Container {
+  cursor: default;
+  border: solid 1px var(--color-grey-6);
+  box-shadow: 1px 2px 15px rgb(0 0 0 / 10%);
+  transition: 0.4s ease-in-out all;
+  width: 100%;
+  max-width: 40rem;
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    border-color: var(--color-secondary);
+    box-shadow: rgb(0 0 0 / 32%);
+  }
+
+  .TextContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    .TextBig {
+      color: var(--color-secondary);
+      font-size: 4rem;
+      font-weight: 700;
+    }
+
+    .TextNormal {
+      position: relative;
+      font-size: 2rem;
+      color: var(--color-grey-2);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding-left: 4rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0.7rem;
+        left: 0;
+        width: 3rem;
+        height: 2px;
+        background-color: var(--color-grey-6);
+      }
+    }
+  }
+}

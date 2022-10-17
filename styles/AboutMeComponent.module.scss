@@ -1,0 +1,92 @@
+.Container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding-bottom: 8rem;
+
+  .TextContainer {
+    margin-bottom: 3.2rem;
+    h3 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      margin-bottom: 1.6rem;
+    }
+
+    p {
+      font-size: 2rem;
+      line-height: 1.8;
+
+      &:first-of-type {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+
+  .Stats {
+    position: relative;
+    margin-bottom: 5.2rem;
+    padding-bottom: 5.2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    justify-items: center;
+    gap: 2.4rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50%;
+      height: 1px;
+      background-color: var(--color-grey-6);
+    }
+  }
+
+  .Skills {
+    position: relative;
+    margin-bottom: 5.2rem;
+    padding-bottom: 5.2rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50%;
+      height: 1px;
+      background-color: var(--color-grey-6);
+    }
+    h4 {
+      text-align: center;
+      font-size: 2.4rem;
+      text-transform: uppercase;
+      margin-bottom: 2.4rem;
+    }
+    .Grid {
+      max-width: 60rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+      gap: 3rem;
+      justify-items: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
+
+  .Timeline {
+    & > h4 {
+      text-align: center;
+      font-size: 2.4rem;
+      text-transform: uppercase;
+      margin-bottom: 2.4rem;
+    }
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 5.2rem;
+    }
+  }
+}

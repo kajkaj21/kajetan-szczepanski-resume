@@ -1,0 +1,21 @@
+.InfoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  @media screen and (min-width: 600px) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  p {
+    color: var(--color-grey-3);
+  }
+}

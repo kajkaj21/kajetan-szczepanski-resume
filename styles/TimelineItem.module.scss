@@ -1,0 +1,49 @@
+.Container {
+  position: relative;
+  width: 100%;
+  max-width: 40rem;
+  padding-left: 5rem;
+  border-left: solid 1px var(--color-grey-6);
+
+  .Icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Badge {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background-color: var(--color-grey-6);
+    color: var(--color-grey-3);
+    border-radius: 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 1.4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  h4 {
+    margin-bottom: 1.2rem;
+  }
+
+  h4,
+  p {
+    color: var(--color-grey-3);
+  }
+
+  p {
+    line-height: 1.6;
+  }
+}

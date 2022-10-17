@@ -1,0 +1,19 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8rem;
+
+  .GridContainer {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(30rem, 100%), 1fr));
+    gap: 4rem;
+    grid-auto-rows: auto 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+}

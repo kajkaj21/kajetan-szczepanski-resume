@@ -1,0 +1,76 @@
+.GridItem {
+  position: relative;
+  min-width: 30rem;
+  max-width: 50rem;
+  min-height: 30rem;
+  max-height: 50rem;
+  border-radius: var(--border-radious);
+  overflow: hidden;
+  aspect-ratio: 1;
+
+  .ImageContainer {
+    img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  .Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-secondary);
+    border-radius: var(--border-radious);
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.3s ease-out all;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      margin-bottom: 2.4rem;
+      font-size: 2.4rem;
+    }
+
+    & .Buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.2rem;
+
+      button {
+        cursor: pointer;
+        box-sizing: inherit;
+        font-family: inherit;
+        border-radius: var(--border-radious);
+        border: solid 1px var(--color-grey-7);
+        background-color: var(--color-grey-7);
+        color: var(--color-white);
+        text-align: center;
+        padding: 0.5rem 1rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        width: 15rem;
+        transition: 0.3s ease all;
+
+        &:hover {
+          color: var(--color-grey-7);
+          background-color: var(--color-white);
+          border-color: var(--color-white);
+        }
+      }
+    }
+  }
+
+  &:hover .Overlay {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
