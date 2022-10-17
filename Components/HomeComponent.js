@@ -27,7 +27,7 @@ export const HomeComponent = () => {
           <div className={styles.LeftSide}></div>
           <div className={styles.Image}>
             <Image
-              src="/me3.heic"
+              src="/me3.HEIC"
               alt="Image of me"
               width="1024"
               height="1024"
