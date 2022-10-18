@@ -40,6 +40,7 @@ a:visited {
   display: inline-block;
   font-family: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
 .material-symbols-outlined {

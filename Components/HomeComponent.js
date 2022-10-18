@@ -17,17 +17,23 @@ export const HomeComponent = () => {
             professionals and learn from them to enhance my programming skills.
           </p>
           <button>
-            <span className={styles.Text}>Download CV</span>{" "}
-            <span className={`material-symbols-outlined ${styles.Icon}`}>
-              file_download
-            </span>
+            <a
+              href="https://drive.google.com/file/d/1YwgXpJkB2qxLi4vm9FKQTh3jl7CDoXUq/view"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className={styles.Text}>Download CV</span>{" "}
+              <span className={`material-symbols-outlined ${styles.Icon}`}>
+                file_download
+              </span>
+            </a>
           </button>
         </div>
         <div className={styles.ImageContainer}>
           <div className={styles.LeftSide}></div>
           <div className={styles.Image}>
             <Image
-              src="/me3.HEIC"
+              src="/me3.jpg"
               alt="Image of me"
               width="1024"
               height="1024"
