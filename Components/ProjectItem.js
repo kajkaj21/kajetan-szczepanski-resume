@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "../styles/ProjectItem.module.scss";
 import Image from "next/image";
+import blurImage from "../public/blur.jpg";
 
 export const ProjectItem = (props) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -22,7 +23,7 @@ export const ProjectItem = (props) => {
           alt={props.alt}
           layout="responsive"
           placeholder="blur"
-          blurDataURL="../public/blur.jpg"
+          blurDataURL={blurImage}
         />
       </div>
       <div
