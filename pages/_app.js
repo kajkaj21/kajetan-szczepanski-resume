@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps, router }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ ease: "easeIn", duration: 1 }}
+      transition={{ ease: "easeIn", duration: 0.5 }}
     >
       <Component {...pageProps} />
       <Navigation />

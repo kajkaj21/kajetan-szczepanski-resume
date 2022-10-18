@@ -21,6 +21,8 @@ export const ProjectItem = (props) => {
           src={props.src}
           alt={props.alt}
           layout="responsive"
+          placeholder="blur"
+          blurDataURL="../public/blur.jpg"
         />
       </div>
       <div
