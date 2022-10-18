@@ -1,6 +1,7 @@
 import styles from "../styles/HomeComponent.module.scss";
 import Image from "next/image";
 import { SectionContainer } from "./layout/SectionContainer";
+import myImage from "../public/me3.jpg";
 
 export const HomeComponent = () => {
   return (
@@ -33,7 +34,7 @@ export const HomeComponent = () => {
           <div className={styles.LeftSide}></div>
           <div className={styles.Image}>
             <Image
-              src="/me3.jpg"
+              src={myImage}
               alt="Image of me"
               width="1024"
               height="1024"
