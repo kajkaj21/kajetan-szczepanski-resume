@@ -40,6 +40,7 @@ export const HomeComponent = () => {
               height="1024"
               priority={true}
               placeholder="blur"
+              quality="70"
             />
           </div>
         </div>

@@ -23,7 +23,7 @@ export const ProjectItem = (props) => {
           alt={props.alt}
           layout="responsive"
           placeholder="blur"
-          blurDataURL={blurImage}
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNsrwcAAZMBCH6e0WEAAAAASUVORK5CYII="
         />
       </div>
       <div
