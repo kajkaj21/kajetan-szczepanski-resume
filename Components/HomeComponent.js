@@ -41,6 +41,7 @@ export const HomeComponent = () => {
               priority={true}
               placeholder="blur"
               quality="70"
+              layout="responsive"
             />
           </div>
         </div>

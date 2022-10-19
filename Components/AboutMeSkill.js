@@ -6,9 +6,11 @@ export const AboutMeSkill = (props) => {
     <div className={styles.Container}>
       <Image
         src={props.src}
+        alt={`${props.title} icon`}
         width="100"
         height="100"
-        alt={`${props.title} icon`}
+        placeholder="blur"
+        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNsrwcAAZMBCH6e0WEAAAAASUVORK5CYII="
       />
       <p>{props.title}</p>
     </div>
