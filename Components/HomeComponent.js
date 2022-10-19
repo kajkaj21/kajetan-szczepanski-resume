@@ -19,7 +19,7 @@ export const HomeComponent = () => {
           </p>
           <button>
             <a
-              href="https://drive.google.com/file/d/1YwgXpJkB2qxLi4vm9FKQTh3jl7CDoXUq/view"
+              href="https://drive.google.com/file/d/1E_XVIfj-pPrX68X5X7cTN3-le3bEK69A/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >

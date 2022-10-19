@@ -7,8 +7,7 @@ export const ProjectsComponent = () => {
   return (
     <div className={styles.Container}>
       <PageHeader
-        text="Here is some of my work that I've done in various programming
-        languages."
+        text="Here is some of my work that I have done in various web technologies."
         header="MY"
         highlighted="Portfolio"
         background="MY WORK"

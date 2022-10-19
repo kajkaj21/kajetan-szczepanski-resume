@@ -57,7 +57,7 @@ export const AboutMeComponent = () => {
           />
         </div>
         <div className={styles.Skills}>
-          <h4>my skills</h4>
+          <h4>Technologies I have worked with</h4>
           <div className={styles.Grid}>
             <AboutMeSkill src="/html.png" title="HTML" />
             <AboutMeSkill src="/css.png" title="CSS" />
