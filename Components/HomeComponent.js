@@ -17,18 +17,6 @@ export const HomeComponent = () => {
             Developer to work on real-life projects together with other
             professionals and learn from them to enhance my programming skills.
           </p>
-          <button>
-            <a
-              href="https://drive.google.com/file/d/1E_XVIfj-pPrX68X5X7cTN3-le3bEK69A/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span className={styles.Text}>Download CV</span>{" "}
-              <span className={`material-symbols-outlined ${styles.Icon}`}>
-                file_download
-              </span>
-            </a>
-          </button>
         </div>
         <div className={styles.ImageContainer}>
           <div className={styles.LeftSide}></div>
