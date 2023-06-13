@@ -1,7 +1,5 @@
 import styles from "../styles/HomeComponent.module.scss";
-import Image from "next/image";
 import { SectionContainer } from "./layout/SectionContainer";
-import myImage from "../public/me3.jpg";
 
 export const HomeComponent = () => {
   return (
@@ -20,18 +18,6 @@ export const HomeComponent = () => {
         </div>
         <div className={styles.ImageContainer}>
           <div className={styles.LeftSide}></div>
-          <div className={styles.Image}>
-            <Image
-              src={myImage}
-              alt="Image of me"
-              width="1024"
-              height="1024"
-              priority={true}
-              placeholder="blur"
-              quality="70"
-              layout="responsive"
-            />
-          </div>
         </div>
       </div>
     </SectionContainer>
